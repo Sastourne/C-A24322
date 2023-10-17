@@ -1,0 +1,15 @@
+#mainHeader, ul {
+    list-style-type: none;
+    color: white;
+    margin-bottom: 0px;
+}
+
+h6 {
+    color: #FAB637;
+}
+
+#Navbar {
+    background-color: #ECEFF3;
+    color: #232628;
+    margin-top: 0px;
+}
