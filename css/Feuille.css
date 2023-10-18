@@ -1,15 +1,75 @@
-#mainHeader, ul {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+#mainHeader {
     list-style-type: none;
     color: white;
     margin-bottom: 0px;
+    line-height: 20px;
+    background-color: #232628;
+    height: 80px;
+}
+#flexnav {
+    background-color: none;
+    list-style-type: none;
+    font-weight: bold;
 }
 
-h6 {
-    color: #FAB637;
+#Grid1 {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    font-size:250%;
 }
 
-#Navbar {
+#Grid234 {
+    margin-top: 10px;
+}
+
+#icon-telephone, #icone-adresse {
+    max-height: 50px;
+    max-width: auto;
+    float: left;
+}
+
+#icon-telephone {
+    margin-left: 50px;
+}
+
+span{
+    color: white;
+}
+
+#h1header {
+    color: #CC6119;
+    font-weight:800;
+    text-transform: uppercase;
+    font-size:x-small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Nav {
     background-color: #ECEFF3;
     color: #232628;
     margin-top: 0px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #CC6119;
+    color: white;
+}
+.nav-item {
+    margin-right: 2%;
+}
+
+#Bouchetrou {
+    background-color: #ECEFF3;
 }
