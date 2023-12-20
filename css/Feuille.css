@@ -289,16 +289,18 @@ bottom: 50%;
     position: absolute;
     margin-top: 3%;
     margin-left: 8%;
-    padding: 2%;
-    width: 18%;
+    padding: 5%;
+    width: 35%;
 }
 
 #article4 {
     padding:0%;
+    height: 943.01px;
+    position: relative;
 }
 
 #lastblock1, #lastblock2 {
-    margin: 0px;
+    margin: -7px;
     font-weight: bolder;
     padding: 0px;
     border: 0px;
@@ -310,4 +312,53 @@ bottom: 50%;
 #lastblock3 {
     padding: 0px;
     margin: 0px;
+    font-size: small;
+}
+
+footer{
+    position: absolute;
+    background-color: #232628;
+    bottom: 0;
+}
+
+#conteneur {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: smaller;
+    color: #ECEFF3;
+}
+#mail {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+}
+#iconesRS {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#rss {
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#divfooter {
+    padding-bottom: 2%;
+    border-bottom: 1px; 
+    border-style: groove;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #ECEFF3;
+}
+
+#Copyright {
+    color: #ECEFF3;
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: 1%;
 }
