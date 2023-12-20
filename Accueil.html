@@ -1,27 +1,245 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/Feuille.css">
-    <title>CLub Auto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Club-Auto/css/Feuille.css">
+    <title>Club Auto - Accueil</title>
 </head>
+
 <body>
-    <header id="mainHeader" class="bg-black">
-        <ul  class="d-flex justify-content-between"> 
-            <li class="d-flex h1 p-6 justify-content-end"><strong>CLUB AUTO </strong></li>
-            <li class="d-flex p-2 justify-content-start"> <h6>ADRESSE</h6> <br> AVENUE CHARLES DE GAULLE <BR> 75000 PARIS</li>
-            <li class="d-flex p-2 justify-content-start"><h6>&#9990; TELEPHONE</h6> <br> 01 23 45 67 89</li>
-            <li class="d-flex p-2 justify-content-start"> <h6>OUVERTURE :</h6> Du Lundi au Samedi <br><h6>HORAIRES :</h6>
-            <li class="d-flex p-3">logos</li> <!-- Ici logos facebook et twitter-->
-        </ul>
+    <header id="mainHeader">
+        <div class="container-fluid"> <!--HEADER-->
+            <div class="row align-items-center">
+                <span id="Grid1" class="col-3">club auto</span>
+
+                <span id="Grid234" class="col-3"> <img src="/Club-Auto/images/icone-adresse.png" alt="icone adresse"
+                        id="icone-adresse" class="float-left">
+                    <div class="uppercase" id="h1header">adresse</div>
+                    <div><STRONG>AVENUE CHARLES DE GAULLE <br>75000 PARIS</STRONG></div>
+                </span>
+
+                <span id="Grid234" class="col-2">
+                    <img src="/Club-Auto/images/icon-telephone.png" id="icon-telephone" class="float-left">
+                    <div class="uppercase" id="h1header">telephone</div>
+                    <div><STRONG>0123456789</STRONG></div>
+                </span>
+
+                <span id="Grid234" class="col-4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-6">
+
+                                <div><span class="uppercase" id="h1header">ouverture : </span><STRONG>Du Lundi au
+                                        Samedi</STRONG></div>
+                                <div><span class="uppercase" id="h1header">horaires : </span><STRONG>De 9h à
+                                        17h</STRONG></div>
+                            </div>
+
+                            <div class="col" id="iconesheader">
+                                <a href="https://www.facebook.com/lesJackyTuning" target="_blank"><img
+                                        src="/Club-Auto/images/facebook.svg" alt="fb"
+                                        class="bg-white rounded-circle"></a> &nbsp; &nbsp;<a
+                                    href="https://twitter.com/realmarcel1/status/1706040333459480740"
+                                    target="_blank"><img src="/Club-Auto/images/twitter.svg" alt="t"
+                                        class="bg-white rounded-circle"></a>
+                            </div>
+                        </div>
+                </span>
+            </div>
+            </ul>
     </header>
-    <navbar id="Navbar" class="d-flex p-2 justify-content-end">
-        <div class="d-flex p-3"><strong>Accueil</strong></div>
-        <div class="d-flex p-3"><strong>Vente</strong></div>
-        <div class="d-flex p-3"><strong>Location</strong></div>
-        <div class="d-flex p-3"><strong>Contact</strong></div>
-    </navbar>
+    <div id="Nav" class="container-fluid"> <!--NAVBAR-->
+        <nav id="Nav" class="col-10">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Club-Auto/Accueil.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Club-Auto/Accueil.html">Vente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Club-Auto/Vehicule.html">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Club-Auto/">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <figure id="vehiculeaccueil" class="container-fluid"> <!--VEHICULE ACCUEIL et LEGENDE-->
+            <div id="imagevehiculeaccueil">
+                <img src="/Club-Auto/images/vehicule1.jpg" alt="1ere image" id="Vehicule1" class="img-fluid">
+            </div>
+            <div class="row" id="legende">
+                <div class="col-3">
+                    <div id="legende1" class="text-uppercase"> club auto </div>
+                </div>
+                <span id="legende1-2" class="col-9 text-uppercase">le meilleur de l'automobile</span>
+            </div>
+        </figure>
+        <article id="article"> <!--Images décalées-->
+            <img src="/Club-Auto/images/clients.jpg" alt="clients" class="float-left" id="imgclients">
+            <h1 class="text-uppercase h4"><strong>bienvenue chez <span style="color: #CC6119;">club auto</span></strong>
+            </h1>
+            <h2 class="h6" id="textearticle"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
+                    deleniti
+                    amet harum tenetur repellendus.</strong></h2>
+            <div class="h6">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur animi modi natus, vitae sapiente
+                illo,
+                explicabo possimus, excepturi iusto error consectetur aliquid quis repellendus quibusdam suscipit beatae
+                deserunt! Officia, nam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae excepturi iste
+                voluptatum
+                sapiente eligendi dolorum ea cupiditate deserunt, iure blanditiis eaque delectus illo ipsam est odit
+                dolore
+                nihil aliquam animi!
+            </div>
+        </article>
+        <article id="article2">
+            <img src="/Club-Auto/images/entretien.jpg" alt="clients" class="float-right" id="imgentretien">
+            <h1 class="text-uppercase h4" id="textebordure"><strong>le meilleur de l'automobile</strong></h1>
+            <div class="h6" id="textearticle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+                dignissimos
+                cumque, cupiditate, ut, ducimus placeat sunt dolorem rem impedit dolor quos? Impedit nihil quo dolor
+                similique
+                ut repellat ipsa quisquam.</div>
+            <ul id="liste">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Consequatur nihil earum accusamus fugiat?</li>
+                <li>Expedita aperiam qui itaque ratione!</li>
+                <li>Dicta in maiores voluptas nisi!</li>
+                <li>Maxime fuga beatae assumenda eveniet.</li>
+            </ul>
+            </div>
+        </article>
+        <figure class="container-fluid" id="article3">
+            <img src="../Club-Auto/images/vente-location.jpg" alt="venteloc" id="imgventeloc" class="img-fluid">
+            <div class="row justify-content-center" id="venteloc">
+                <div id="loc" class="col-4">
+                    <div id="texte">
+                        <div class="h4" id="gras"> <strong>Vous souhaitez louer?</strong></div>
+                        <span class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                            tempore asperiores, consequuntur quibusdam nesciunt ab sint earum quas iste quo impedit
+                            excepturi rerum dolorum alias laudantium rem velit placeat minus voluptates facilis porro
+                            amet doloremque consectetur. Eveniet voluptas voluptates molestiae?</span>
+                    </div>
+                </div>
+                <div id="vente" class="col-4">
+                    <div id="texte">
+                        <div class="h4" id="gras"> <strong>Vous souhaitez acheter?</strong></div>
+                        <span class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+                            tempore asperiores, consequuntur quibusdam nesciunt ab sint earum quas iste quo impedit
+                            excepturi rerum dolorum alias laudantium rem velit placeat minus voluptates facilis porro
+                            amet doloremque consectetur. Eveniet voluptas voluptates molestiae?</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid row" id="choix">
+                <div class="text-uppercase col-9 text-white align-items-center" id="textechoix"><strong>vehicules
+                        recents</strong></div>
+                <div class="row text-white col-9" id="imageschoix">
+                    <div class="col-4" id="vehicule2-1"><img src="../Club-Auto/images/vehicule2.jpg" alt="vehicule2"
+                            class="img-fluid"></div>
+                    <div class="col-4" id="vehicule2-2"><img src="../Club-Auto/images/vehicule2.jpg" alt="vehicule2"
+                            class="img-fluid"></div>
+                    <div class="col-4" id="vehicule2-3"><img src="../Club-Auto/images/vehicule2.jpg" alt="vehicule2"
+                            class="img-fluid"></div>
+                    <div class="row align-items-center">
+                        <div class="row col-4 text-uppercase">
+                            <div class="col-9">bmw5351, navi, leather, abs</div>
+                            <div id="bleu" class="col-3 text-end"><span id="bleufils">5 500€</span></div>
+                        </div>
+                        <div class="row col-4 text-uppercase">
+                            <div class="col-9">bmw 328, sport line body kit</div>
+                            <div id="bleu" class="col-3 text-end"><span id="bleufils">8 000€</span></div>
+                        </div>
+                        <div class="row col-4 text-uppercase">
+                            <div class="col-9">ford explorer 2015 4wd</div>
+                            <div id="bleu" class="col-3 text-end"><span id="bleufils"><span
+                                        class="small"><s>9000€</s></span> 8200€</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </figure>
+        <div>
+            <div id="blockcontact">Pourquoi nous choisir ?</div>
+            <div id="contact" class=" container-fluid d-flex">
+                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon1.png" alt="icon1"
+                        id="icones-contact"><span id="FRES" class="text-uppercase">Financement</span><br> <br> ipsum
+                    dolor sit amet consectetur, adipisicing elit. Nam laborum eos, sit reprehenderit sapiente autem
+                    quibusdam suscipit odio doloribus aliquam eaque nisi!</p>
+                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon2.png" alt="icon2"
+                        id="icones-contact"><span id="FRES" class="text-uppercase"> Reactivité de l'équipe
+                        technique</span><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+                    delectus ullam assumenda sapiente quo autem similique minus fugiat iusto laboriosam.</p>
+                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon3.png" alt="icon3"
+                        id="icones-contact"><span id="FRES" class="text-uppercase">à l'écoute de notre
+                        clientèle</span><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vel sit
+                    ad alias delectus laudantium eligendi adipisci.</p>
+                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon4.png" alt="icon4"
+                        id="icones-contact"><span id="FRES" class="text-uppercase">Service &
+                        Maintenance</span><br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Reprehenderit, quae dolore dolorem laudantium vitae ea mollitia, quam obcaecati voluptate, minus
+                    dicta.</p>
+            </div>
+            <div id="contacteznous"><span id="CN">CONTACTEZ NOUS</span></div>
+        </div>
+        <figure class="container-fluid" id="article4">
+            <img src="../Club-Auto/images/vehicule3.jpg" alt="V4" id="imgfin">
+            <div class="row " id="CAVL">
+                <div class="h2 text-uppercase color-black" id="lastblock1">Club auto</div>
+                <div class="h2 text-uppercase text-white" id="lastblock2">vente et location</div>
+                <div id="lastblock3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, architecto
+                    perspiciatis? Nisi, saepe dignissimos earum explicabo autem sapiente. Error, sit optio ab deserunt
+                    eligendi
+                    necessitatibus.</div>
+            </div>
+            <footer>
+                <div id="conteneur" class="container-fluid d-flex">
+                    <div class="col-3" id="divfooter">
+                        <h1 class="h5"><strong>CLUB AUTO</strong></h1>Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit.
+                        Magni doloribus eveniet non pariatur officia aliquam molestias nobis placeat. Porro, obcaecati?
+                    </div>
+                    <div class="col-3" id="divfooter">
+                        <h1 class="h5"><strong>HORAIRES D'OUVERTURE</strong></h1> lundi - samedi : 9:00 - 17:00 <br>
+                        Dimanche et
+                        jours fériés : fermé
+                    </div>
+                    <div class="col-3" id="divfooter">
+                        <h1 class="h5"><strong>NEWSLETTER</strong></h1><input type="text"
+                            name="mail" id="mail"/>
+                            <img src="/Club-Auto/images/square-rss-solid.svg" alt="rss" id="rss"><br>Inscrivez-vous pour
+                        recevoir les dernieres offres
+                    </div>
+                    <div class="col-3" id="divfooter">
+                        <h1 class="h5"><strong>RESEAUX SOCIAUX</strong></h1>
+                        <img src="/Club-Auto/images/facebook-2.svg" alt="fb" id="iconesRS">
+                        <img src="/Club-Auto/images/twitter-2.svg" alt="X" id="iconesRS">
+                        <img src="/Club-Auto/images/instagram.svg" alt="insta" id="iconesRS">
+                        <img src="/Club-Auto/images/google.svg" alt="google" id="iconesRS">
+                        <img src="/Club-Auto/images/youtube.svg" alt="yt" id="iconesRS">
+                    </div>
+                </div>
+                <div id="Copyright">
+                    Copyright &copy; Club Auto - Tous droits réservés
+                </div>
+            </footer>
+        </figure>
+    </main>
+
 </body>
+
 </html>

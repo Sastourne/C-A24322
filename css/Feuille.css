@@ -1,15 +1,364 @@
-#mainHeader, ul {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#mainHeader {
     list-style-type: none;
     color: white;
     margin-bottom: 0px;
+    line-height: 20px;
+    background-color: #232628;
+    height: 80px;
+    }
+#flexnav {
+    background-color: none;
+    list-style-type: none;
+    font-weight: bold;
 }
 
-h6 {
-    color: #FAB637;
+#Grid1 {
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    font-size:250%;
 }
 
-#Navbar {
+#Grid234 {
+    margin-top: 10px;
+}
+
+#icon-telephone, #icone-adresse {
+    max-height: 50px;
+    max-width: auto;
+    float: left;
+}
+
+#iconesheader {
+    margin-top: 10px;
+}
+
+
+#h1header {
+    color: #CC6119;
+    font-weight:800;
+    text-transform: uppercase;
+    font-size:x-small;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#Nav {
     background-color: #ECEFF3;
     color: #232628;
     margin-top: 0px;
+    height: 40px;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: black;
+    font-weight: bold;
+}
+
+.active {
+    background-color: #CC6119;
+    color: white;
+}
+.nav-item {
+    margin-right: 2%;
+}
+
+#Bouchetrou {
+    background-color: #ECEFF3;
+}
+
+#vehiculeaccueil {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size:x-large ;
+    background-color: #232628;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    position: relative;
+    }
+
+#legende {
+    height: 9%;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    background-color: #232628;
+    margin-left: 0px;
+    min-width: 100%;
+    font-size:xx-large;
+}
+
+#legende1{
+    font-weight: bold;
+    color: white;
+    text-align: end;
+}
+#legende1-2 {
+    color: #cc6119;
+    font-weight: bold;
+}
+
+#article {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 15%;
+} 
+
+#article2 {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: 5%;
+}
+#article3 {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#liste {
+        list-style-image: url("../images/check-lg.svg");
+}
+li {
+    margin-bottom: 1%;
+}
+#imgclients {
+    width: 48%;
+    height: auto;
+    float: left;
+    margin-right: 5%;
+
+}
+#textearticle {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#imgentretien {
+    width: 48%;
+    height: auto;
+    float: right;
+    margin-left: 5%;
+}
+#textebordure {
+    border-style:groove;
+    border-top: black;
+    border-right: black;
+    border-left: none;
+    border-width: thin;
+    padding-bottom: 5%;
+}
+
+#imgventeloc {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: inline-block;
+    position: relative;
+    margin-top: 0px;
+}
+
+#venteloc {
+    position: absolute;
+   top:5%;
+}
+
+#article3 {
+    position: relative;
+}
+
+#loc {
+background-color: #fab637;
+margin-right: 1%;
+position: relative;
+bottom: 50%;
+}
+
+#vente {
+    background-color: #ff4848;
+    margin-left: 1%;
+}
+#texte {
+    margin: 10%;
+}
+#gras {
+    margin-bottom: 2%;
+}
+
+#choix {
+    background-color: #232628;
+    position: absolute;
+    margin: 0px;
+    bottom: 0%;
+    height: 55%;
+    justify-content: center;
+    text-align: left;
+}
+#textechoix {
+    font-size: xx-large;
+    text-align: center;
+    border-style: groove;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #CC6119;
+    height: 10%;
+    position: relative;
+    margin-top: 3%;
+}
+#imageschoix {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+#bleu {
+    background-color: #6C98E1;
+    border-radius: 4%;
+    display: table;
+    font-weight: bold;
+}
+
+#bleufils {
+    display: table-cell;
+    vertical-align: middle;    
+    text-align: left;
+}
+#blockcontact {
+    text-align: center;
+    font-size: xx-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 80px;
+}
+
+#contact {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#contactblocks {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#icones-contact {
+    height: 70px;
+    width: auto;
+    float: left;
+    margin-bottom: 150px;
+    margin-right: 2%;
+}
+
+#FRES {
+    font-weight: bolder;
+}
+
+#contacteznous {
+    text-align: center;
+    font-size: large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 70px;
+    color: #ECEFF3;
+}
+
+#CN {
+    background-color: #6C98E1;
+    padding-inline: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+#imgfin {
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+
+#CAVL {
+    background-color:#fab637;
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 8%;
+    padding: 5%;
+    width: 35%;
+}
+
+#article4 {
+    padding:0%;
+    height: 943.01px;
+    position: relative;
+}
+
+#lastblock1, #lastblock2 {
+    margin: -7px;
+    font-weight: bolder;
+    padding: 0px;
+    border: 0px;
+}
+#lastblock2 {
+    margin-bottom: 2%;
+}
+
+#lastblock3 {
+    padding: 0px;
+    margin: 0px;
+    font-size: small;
+}
+
+footer{
+    position: absolute;
+    background-color: #232628;
+    bottom: 0;
+}
+
+#conteneur {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    font-size: smaller;
+    color: #ECEFF3;
+}
+#mail {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0;
+}
+#iconesRS {
+    height: 30px;
+    margin-right: 10px;
+}
+
+#rss {
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+#divfooter {
+    padding-bottom: 2%;
+    border-bottom: 1px; 
+    border-style: groove;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-color: #ECEFF3;
+}
+
+#Copyright {
+    color: #ECEFF3;
+    text-align: center;
+    font-size: smaller;
+    margin-bottom: 1%;
 }
