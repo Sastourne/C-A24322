@@ -1,0 +1,103 @@
+.principal {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.divbread {
+    border-bottom: 2px solid;
+    padding: 5px;
+    border-color: grey;
+    text-transform: uppercase;
+    margin-bottom: 5%;
+  }
+  
+  .breadcrumb a:hover {   
+    color: black;
+  }
+  .breadcrumb ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .breadcrumb li:not(:last-child)::after {
+    display: inline-block;
+    margin: 0 .25rem;
+    content: "/";
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+.breadlink {
+    color: grey;
+}
+.breadlink-pre {
+    color: grey;
+    text-decoration: none;
+}
+
+.articleV {
+    margin-right: 30%;
+}
+.BMW {
+    width: 100%;
+}
+
+.navbar2 {
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: black;
+    color: white;
+    margin-left: -12px;
+    margin-right: -12px;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    padding: 10px;
+    border: 0;
+    font-size: small;
+}
+
+.actif {
+    background-color: white;
+    color: black;
+    padding: 13px 10px 13px 20px;
+    text-decoration: none;
+    border-top: 4px solid;
+    border-color: #CC6119;
+}
+
+.link {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px 10px 10px 10px;
+    font-weight: bolder;
+    color: white;
+}
+
+.link a:hover {
+    color: #CC6119;
+}
+
+.h7 {
+    font-size: smaller;
+}
+.quote {
+    padding-left: 8%;
+    border-left: 4px solid;
+    border-color: #CC6119;
+    font-style: italic;
+    color: grey;
+    font-size: smaller;
+}
+.liste {
+    list-style-image: url(/Club-Auto/images/icons8-vérifié.svg);    
+}
+
+.liste2 {
+    margin-bottom: 10%;
+}
+.footer {
+    position: relative;
+}
