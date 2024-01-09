@@ -27,7 +27,7 @@ body{
     font-size:250%;
 }
 
-#Grid234 {
+#Grid234, #phone {
     margin-top: 10px;
 }
 
@@ -85,16 +85,6 @@ body{
     position: relative;
     }
 
-#legende {
-    height: 9%;
-    align-items: center;
-    position: absolute;
-    bottom: 0%;
-    background-color: #232628;
-    margin-left: 0px;
-    min-width: 100%;
-    font-size:xx-large;
-}
 
 #legende1{
     font-weight: bold;
@@ -131,7 +121,6 @@ li {
 #imgclients {
     width: 48%;
     height: auto;
-    float: left;
     margin-right: 5%;
 
 }
@@ -140,10 +129,9 @@ li {
     margin-bottom: 3%;
 }
 
-#imgentretien {
+#imgentretien1, #imgentretien2 {
     width: 48%;
     height: auto;
-    float: right;
     margin-left: 5%;
 }
 #textebordure {
@@ -216,6 +204,10 @@ bottom: 50%;
 #imageschoix {
     padding-left: 0%;
     padding-right: 0%;
+}
+
+#car1, #car2 {
+    margin-right: 2%;
 }
 #bleu {
     background-color: #6C98E1;
@@ -362,3 +354,93 @@ footer{
     font-size: smaller;
     margin-bottom: 1%;
 }
+
+@media screen and (max-width: 1024px) {
+    #Grid234 {
+    display: none;}
+    #legende {
+        height: 9%;
+        align-items: center;
+        position: relative;
+        bottom: 0%;
+        background-color: #232628;
+        margin-left: 0px;
+        min-width: 100%;
+        font-size:xx-large;
+}
+    #mainHeader {
+        display: block;
+        height: fit-content;
+    }
+    #divheader {
+        justify-content: center;
+        align-items: center;
+    }
+    #imgclients {
+        float: none;
+    }
+    #imgentretien1, #car1, #car3, #vehicule2-1, #vehicule2-3 {
+        display: none;
+    }
+    #choix {
+        position: relative;
+    }
+    #article3 {
+        position: relative;
+        height: fit-content;
+    }
+    #vehicule2-2 {
+        width: 100%;
+    }
+    #venteloc {
+        position: relative;
+        padding-top: 5%;
+        font-size: x-large;
+    }
+    #gras {
+        font-size: xx-large;
+    }
+    #imgventeloc {
+        position: absolute;
+    }
+    #CAVL {
+        width: 100%;
+        margin: 10% 0 0 0;
+    }
+    }
+    #lastblock1, #lastblock2 {
+        font-size: xx-large;
+    }
+    #lastblock3 {
+        font-size: x-large;
+    }
+    #conteneur {
+        flex-wrap: wrap;
+        font-size: x-large;
+        border-style: none;
+    }
+    
+
+@media screen and (min-width: 1024px){
+    #legende {
+        height: 9%;
+        align-items: center;
+        position: absolute;
+        bottom: 0%;
+        background-color: #232628;
+        margin-left: 0px;
+        min-width: 100%;
+        font-size:xx-large;
+    }
+    #imgclients {
+        float: left;
+    }
+    #imgentretien1 {
+        float: right;
+    }
+    #imgentretien2 {
+        display: none;
+    }
+   
+    }
+
