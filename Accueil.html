@@ -19,22 +19,24 @@
 <body>
     <header id="mainHeader">
         <div class="container-fluid"> <!--HEADER-->
-            <div class="row align-items-center">
-                <span id="Grid1" class="col-3">club auto</span>
+            <!--Remplacer les Id par class pour le CSS sur les prochains projets-->
+            <div class="row align-items-center" id="divheader">
+                <span id="Grid1" class="col-3 d-none d-md-none d-lg-block">club auto</span>
 
-                <span id="Grid234" class="col-3"> <img src="/Club-Auto/images/icone-adresse.png" alt="icone adresse"
+                <span id="Grid234" class="col-3 adresse"> <img src="/Club-Auto/images/icone-adresse.png" alt="icone adresse"
                         id="icone-adresse" class="float-left">
                     <div class="uppercase" id="h1header">adresse</div>
                     <div><STRONG>AVENUE CHARLES DE GAULLE <br>75000 PARIS</STRONG></div>
                 </span>
 
-                <span id="Grid234" class="col-2">
+                <span id="phone" class="col-2">
+                    <img src="/Club-Auto/images/icons8-menu.svg" id="MenuToggle" alt="menu" class="d-md-block d-lg-none">
                     <img src="/Club-Auto/images/icon-telephone.png" id="icon-telephone" class="float-left">
                     <div class="uppercase" id="h1header">telephone</div>
                     <div><STRONG>0123456789</STRONG></div>
                 </span>
 
-                <span id="Grid234" class="col-4">
+                <span id="Grid234" class="col-4 open">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-6">
@@ -58,7 +60,12 @@
             </div>
             </ul>
     </header>
-    <div id="Nav" class="container-fluid"> <!--NAVBAR-->
+    
+    <!--NAVBAR-->
+
+
+
+    <div id="Nav" class="container-fluid d-none d-md-none d-lg-block"> 
         <nav id="Nav" class="col-10">
             <ul class="nav justify-content-end">
                 <li class="nav-item">
@@ -79,7 +86,7 @@
     <main>
         <figure id="vehiculeaccueil" class="container-fluid"> <!--VEHICULE ACCUEIL et LEGENDE-->
             <div id="imagevehiculeaccueil">
-                <img src="/Club-Auto/images/vehicule1.jpg" alt="1ere image" id="Vehicule1" class="img-fluid">
+                <img src="/Club-Auto/images/vehicule1.jpg" alt="1ere image" id="Vehicule1" class="img-fluid d-none d-md-none d-lg-block">
             </div>
             <div class="row" id="legende">
                 <div class="col-3">
@@ -89,7 +96,7 @@
             </div>
         </figure>
         <article id="article"> <!--Images décalées-->
-            <img src="/Club-Auto/images/clients.jpg" alt="clients" class="float-left" id="imgclients">
+            <img src="/Club-Auto/images/clients.jpg" alt="clients" id="imgclients">
             <h1 class="text-uppercase h4"><strong>bienvenue chez <span style="color: #CC6119;">club auto</span></strong>
             </h1>
             <h2 class="h6" id="textearticle"><strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil
@@ -107,7 +114,7 @@
             </div>
         </article>
         <article id="article2">
-            <img src="/Club-Auto/images/entretien.jpg" alt="clients" class="float-right" id="imgentretien">
+            <img src="/Club-Auto/images/entretien.jpg" alt="clients" id="imgentretien1">
             <h1 class="text-uppercase h4" id="textebordure"><strong>le meilleur de l'automobile</strong></h1>
             <div class="h6" id="textearticle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
                 dignissimos
@@ -121,12 +128,13 @@
                 <li>Dicta in maiores voluptas nisi!</li>
                 <li>Maxime fuga beatae assumenda eveniet.</li>
             </ul>
+            <img src="/Club-Auto/images/entretien.jpg" alt="clients" id="imgentretien2">
             </div>
         </article>
         <figure class="container-fluid" id="article3">
             <img src="../Club-Auto/images/vente-location.jpg" alt="venteloc" id="imgventeloc" class="img-fluid">
             <div class="row justify-content-center" id="venteloc">
-                <div id="loc" class="col-4">
+                <div id="loc" class="col-md-4">
                     <div id="texte">
                         <div class="h4" id="gras"> <strong>Vous souhaitez louer?</strong></div>
                         <span class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -135,7 +143,7 @@
                             amet doloremque consectetur. Eveniet voluptas voluptates molestiae?</span>
                     </div>
                 </div>
-                <div id="vente" class="col-4">
+                <div id="vente" class="col-md-4">
                     <div id="texte">
                         <div class="h4" id="gras"> <strong>Vous souhaitez acheter?</strong></div>
                         <span class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
@@ -145,29 +153,44 @@
                     </div>
                 </div>
             </div>
-            <div class="container-fluid row" id="choix">
+            <div class="container-fluid row justify-content-center" id="choix">
                 <div class="text-uppercase col-9 text-white align-items-center" id="textechoix"><strong>vehicules
-                        recents</strong></div>
-                <div class="row text-white col-9" id="imageschoix">
+                        recents</strong>
+                </div>
+                <div class="row text-white col-9 justify-content-center" id="imageschoix">
                     <div class="col-4" id="vehicule2-1"><img src="../Club-Auto/images/vehicule2.jpg" alt="vehicule2"
-                            class="img-fluid"></div>
+                            class="img-fluid">
+                    </div>
                     <div class="col-4" id="vehicule2-2"><img src="../Club-Auto/images/vehicule2.jpg" alt="vehicule2"
-                            class="img-fluid"></div>
+                          class="img-fluid">
+                    </div>
                     <div class="col-4" id="vehicule2-3"><img src="../Club-Auto/images/vehicule2.jpg" alt="vehicule2"
-                            class="img-fluid"></div>
-                    <div class="row align-items-center">
-                        <div class="row col-4 text-uppercase">
-                            <div class="col-9">bmw5351, navi, leather, abs</div>
-                            <div id="bleu" class="col-3 text-end"><span id="bleufils">5 500€</span></div>
+                            class="img-fluid">
+                    </div>
+                    <div class="row align-items-center justify-content-center">
+                        <div id="car1" class="row col-md-4 text-uppercase">
+                            <div  class="col-9">bmw5351, navi, leather, abs
+                            </div>
+                            <div id="bleu" class="col-3 text-end">
+                                <span id="bleufils">5 500€</span>
+                            </div>
                         </div>
-                        <div class="row col-4 text-uppercase">
-                            <div class="col-9">bmw 328, sport line body kit</div>
-                            <div id="bleu" class="col-3 text-end"><span id="bleufils">8 000€</span></div>
+                        <div id="car2" class="row col-md-4 text-uppercase justify-content-center">
+                            <div class="col-9">bmw 328, sport line body kit
+                            </div>
+                            <div id="bleu" class="col-3 text-end">
+                                <span id="bleufils">8 000€</span>
+                            </div>
                         </div>
-                        <div class="row col-4 text-uppercase">
-                            <div class="col-9">ford explorer 2015 4wd</div>
-                            <div id="bleu" class="col-3 text-end"><span id="bleufils"><span
-                                        class="small"><s>9000€</s></span> 8200€</span></div>
+                        <div  id="car3" class="row col-md-4 text-uppercase">
+                            <div class="col-9">ford explorer 2015 4wd
+                            </div>
+                            <div id="bleu" class="col-3 text-end">
+                                <span id="bleufils">
+                                    <span class="small"><s>9000€</s>
+                                    </span> 8200€
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -175,20 +198,20 @@
         </figure>
         <div>
             <div id="blockcontact">Pourquoi nous choisir ?</div>
-            <div id="contact" class=" container-fluid d-flex">
-                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon1.png" alt="icon1"
+            <div id="contact" class=" container-fluid d-md-flex">
+                <p id="contactblocks" class="col-lg-3"><img src="../Club-Auto/images/icon1.png" alt="icon1"
                         id="icones-contact"><span id="FRES" class="text-uppercase">Financement</span><br> <br> ipsum
                     dolor sit amet consectetur, adipisicing elit. Nam laborum eos, sit reprehenderit sapiente autem
                     quibusdam suscipit odio doloribus aliquam eaque nisi!</p>
-                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon2.png" alt="icon2"
+                <p id="contactblocks" class="col-md-3"><img src="../Club-Auto/images/icon2.png" alt="icon2"
                         id="icones-contact"><span id="FRES" class="text-uppercase"> Reactivité de l'équipe
                         technique</span><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                     delectus ullam assumenda sapiente quo autem similique minus fugiat iusto laboriosam.</p>
-                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon3.png" alt="icon3"
+                <p id="contactblocks" class="col-md-3"><img src="../Club-Auto/images/icon3.png" alt="icon3"
                         id="icones-contact"><span id="FRES" class="text-uppercase">à l'écoute de notre
                         clientèle</span><br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum vel sit
                     ad alias delectus laudantium eligendi adipisci.</p>
-                <p id="contactblocks" class="col-3"><img src="../Club-Auto/images/icon4.png" alt="icon4"
+                <p id="contactblocks" class="col-md-3"><img src="../Club-Auto/images/icon4.png" alt="icon4"
                         id="icones-contact"><span id="FRES" class="text-uppercase">Service &
                         Maintenance</span><br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Reprehenderit, quae dolore dolorem laudantium vitae ea mollitia, quam obcaecati voluptate, minus
@@ -197,7 +220,7 @@
             <div id="contacteznous"><span id="CN">CONTACTEZ NOUS</span></div>
         </div>
         <figure class="container-fluid" id="article4">
-            <img src="../Club-Auto/images/vehicule3.jpg" alt="V4" id="imgfin">
+            <img src="../Club-Auto/images/vehicule3.jpg" alt="V4" id="imgfin" class="img-fluid">
             <div class="row " id="CAVL">
                 <div class="h2 text-uppercase color-black" id="lastblock1">Club auto</div>
                 <div class="h2 text-uppercase text-white" id="lastblock2">vente et location</div>
@@ -206,25 +229,24 @@
                     eligendi
                     necessitatibus.</div>
             </div>
-            <footer>
+            <footer id="footer">
                 <div id="conteneur" class="container-fluid d-flex">
-                    <div class="col-3" id="divfooter">
+                    <div class="col-md-3" id="divfooter">
                         <h1 class="h5"><strong>CLUB AUTO</strong></h1>Lorem ipsum dolor, sit amet consectetur
                         adipisicing elit.
                         Magni doloribus eveniet non pariatur officia aliquam molestias nobis placeat. Porro, obcaecati?
                     </div>
-                    <div class="col-3" id="divfooter">
+                    <div class="col-md-3" id="divfooter">
                         <h1 class="h5"><strong>HORAIRES D'OUVERTURE</strong></h1> lundi - samedi : 9:00 - 17:00 <br>
                         Dimanche et
                         jours fériés : fermé
                     </div>
-                    <div class="col-3" id="divfooter">
-                        <h1 class="h5"><strong>NEWSLETTER</strong></h1><input type="text"
-                            name="mail" id="mail"/>
-                            <img src="/Club-Auto/images/square-rss-solid.svg" alt="rss" id="rss"><br>Inscrivez-vous pour
+                    <div class="col-md-3" id="divfooter">
+                        <h1 class="h5"><strong>NEWSLETTER</strong></h1><input type="text" name="mail" id="mail" />
+                        <img src="/Club-Auto/images/square-rss-solid.svg" alt="rss" id="rss"><br>Inscrivez-vous pour
                         recevoir les dernieres offres
                     </div>
-                    <div class="col-3" id="divfooter">
+                    <div class="col-md-3" id="divfooter">
                         <h1 class="h5"><strong>RESEAUX SOCIAUX</strong></h1>
                         <img src="/Club-Auto/images/facebook-2.svg" alt="fb" id="iconesRS">
                         <img src="/Club-Auto/images/twitter-2.svg" alt="X" id="iconesRS">
